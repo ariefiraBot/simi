@@ -21,7 +21,7 @@ if($message['type']=='kontak')
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'Terima Kasih Stikernya.'										
+										'text' => ' '										
 									
 									)
 							)
@@ -30,7 +30,7 @@ if($message['type']=='kontak')
 }
 else
 $pesan=str_replace(" ", "%20", $pesan_datang);
-$key = 'f1830f11-af68-49ef-bbc8-c4308cbf4d20'; //API SimSimi
+$key = 'b6a1c79c-b51e-48a0-a0c8-a1f92fab8d4a'; //API SimSimi
 $url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
 $json_data = file_get_contents($url);
 $url=json_decode($json_data,1);
