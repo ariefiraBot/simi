@@ -5,8 +5,8 @@ Modified by Ilyasa
 2017
 */
 require_once('./line_class.php');
-$channelAccessToken = '3K8JH/ylhY1y9qgpK32x4yy3IxGwiMGQHOkOgO47IyHVoY9wBJHxhCiFjeV1eEb6GBuBmzPncbsmrDGP7SH0SFiNE+KZ3texYrirn4/4pnKLG6lXlKzprykaqFX1fiWv1T0cwZFlQ7zrGYMLl8RcQgdB04t89/1O/w1cDnyilFU='; //sesuaikan 
-$channelSecret = '4f8a0b4ec3a38985eb83abaad2a41b09';//sesuaikan
+$channelAccessToken = 'ZUJW7fbRDcLaJa/gxleUSBkPoQU8xU46S6jecqEXSYpOc2sDrtWL2vC8vZ3QbjfEGBuBmzPncbsmrDGP7SH0SFiNE+KZ3texYrirn4/4pnKM0S9i2fYcZ+CdC66hrTAR3wGE+xAVaTw7iHwVI0k88wdB04t89/1O/w1cDnyilFU='; //sesuaikan 
+$channelSecret = 'f7b841dafb03c3ff6fc7969832ca4c21';//sesuaikan
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $userId 	= $client->parseEvents()[0]['source']['userId'];
 $replyToken = $client->parseEvents()[0]['replyToken'];
@@ -30,7 +30,7 @@ if($message['type']=='kontak')
 }
 else
 $pesan=str_replace(" ", "%20", $pesan_datang);
-$key = 'b6a1c79c-b51e-48a0-a0c8-a1f92fab8d4a'; //API SimSimi
+$key = 'd731b57f-09d4-4cad-a9ce-907260b86c2d'; //API SimSimi
 $url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
 $json_data = file_get_contents($url);
 $url=json_decode($json_data,1);
