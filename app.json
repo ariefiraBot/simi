@@ -1,6 +1,6 @@
 {
-  "name": "Line_Bot_Shalat",
+  "name": "simisimiv2",
   "description": "Jadwal Shalat Untuk Bot Line",
-  "repository": "https://github.com/zFz0000/Line_Bot_Shalat",
+  "repository": "https://github.com/prankbots/simisimiphp/",
   "keywords": ["line bot", "messaging api"]
 }
